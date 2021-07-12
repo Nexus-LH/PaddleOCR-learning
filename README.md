@@ -59,4 +59,4 @@ python tools/infer/predict_system.py --image_dir="./1.jpg" --det_model_dir="./in
 ![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/2.png)
 
 说明预测成功
-# 以上所有命令均在paddle_env这个虚拟环境中运行
+# 以上所有命令均在paddle_env这个虚拟环境中运行，后续会继续更新。
