@@ -23,7 +23,9 @@ pip install -r requirements.txt
 ~~~
 在安装过程中出现Failed building wheel for python_Levenshtein，报这个错的主要原因是因为缺少whl文件。
 解决方法在[此处](https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-levenshtein)下载对应的whl文件安装上就行。
-如图所示:()
+
+如图所示:![图片](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/1.png)
+
 之后执行命令
 ~~~
 pip install E:\Anconda\Anconda3\envs\paddle_env
@@ -54,4 +56,7 @@ not find model file path './inference/ch_ppocr_mobile_v2.0_cls_infer/'/inference
 ~~~
 python tools/infer/predict_system.py --image_dir="./1.jpg" --det_model_dir="./inference/ch_ppocr_server_v2.0_det_infer/"  --rec_model_dir="./inference/ch_ppocr_server_v2.0_rec_infer/" --cls_model_dir="./inference/ch_ppocr_mobile_v2.0_cls_infer/" --use_angle_cls=True --use_space_char=True --use_gpu=False
 ~~~
+![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/2.png)
+
+说明预测成功
 # 以上所有命令均在paddle_env这个虚拟环境中运行
