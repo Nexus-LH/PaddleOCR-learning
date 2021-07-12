@@ -23,6 +23,7 @@ pip install -r requirements.txt
 ~~~
 在安装过程中出现Failed building wheel for python_Levenshtein，报这个错的主要原因是因为缺少whl文件。
 解决方法在[此处](https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-levenshtein)下载对应的whl文件安装上就行。
+如图所示:()
 之后执行命令
 ~~~
 pip install E:\Anconda\Anconda3\envs\paddle_env
