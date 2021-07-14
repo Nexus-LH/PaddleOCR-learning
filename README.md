@@ -59,4 +59,14 @@ python tools/infer/predict_system.py --image_dir="./1.jpg" --det_model_dir="./in
 ![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/2.png)
 
 说明预测成功
-# 以上所有命令均在paddle_env这个虚拟环境中运行，后续会继续更新。
+# 以上所有命令均在paddle_env这个虚拟环境中运行。
+# 使用AI Studio训练（没有GPU太慢了）
+跟上边一样的步骤，不过不用安装Paddle框架。但是切记PaddleOCR的依赖库还得安装，安装完之后，运行
+~~~
+python3 tools/train.py -c configs/det/ch_ppocr_v2.0/ch_det_res18_db_v2.0.yml -o Global.pretrain_weights=./inference/ch_ppocr_server_v2.0_det_train/
+~~~
+如果报错，缺哪个库手动安装即可；
+最后注意，要将configs/det/ch_ppocr_v2.0/ch_det_res18_db_v2.0.yml 里边的num-works改为0.
+这样就可以开始训练了（白嫖免费GPU真香）
+
+![](https://github.com/Nexus-LH/PaddleOCR-learning/edit/main/3.png)
