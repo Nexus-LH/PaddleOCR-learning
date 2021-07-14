@@ -83,3 +83,7 @@ python3 tools/infer/predict_system_tianchi.py --image_dir="./doc/imgs/11.jpg" --
 ~~~
 
 ![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/4.png)
+
+# 结果
+
+![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/5.png)
