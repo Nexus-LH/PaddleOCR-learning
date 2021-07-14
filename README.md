@@ -69,4 +69,4 @@ python3 tools/train.py -c configs/det/ch_ppocr_v2.0/ch_det_res18_db_v2.0.yml -o 
 最后注意，要将configs/det/ch_ppocr_v2.0/ch_det_res18_db_v2.0.yml 里边的num-works改为0.
 这样就可以开始训练了（白嫖免费GPU真香）
 
-![](https://github.com/Nexus-LH/PaddleOCR-learning/edit/main/3.png)
+![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/3.png)
