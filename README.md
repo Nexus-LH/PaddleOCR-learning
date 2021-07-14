@@ -67,6 +67,19 @@ python3 tools/train.py -c configs/det/ch_ppocr_v2.0/ch_det_res18_db_v2.0.yml -o 
 ~~~
 如果报错，缺哪个库手动安装即可；
 最后注意，要将configs/det/ch_ppocr_v2.0/ch_det_res18_db_v2.0.yml 里边的num-works改为0.
-这样就可以开始训练了（白嫖免费GPU真香）
+# 这样就可以开始训练了（白嫖免费GPU真香）
 
 ![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/3.png)
+
+# 导出训练好的模型
+~~~
+python3 tools/export_model.py -c configs/det/ch_ppocr_v2.0/ch_det_res18_db_v2.0.yml -o Global.pretrained_model=output/ch_db_res18/best_accuracy  Global.save_inference_dir=output/ch_db_res18/
+~~~
+
+# 开始预测
+
+~~~
+python3 tools/infer/predict_system_tianchi.py --image_dir="./doc/imgs/11.jpg" --det_model_dir="output/ch_db_res18/"  --rec_model_dir="./inference/ch_ppocr_server_v2.0_rec_infer/" --cls_model_dir='./inference/ch_ppocr_mobile_v2.0_cls_infer/' --use_angle_cls=True --use_space_char=True
+~~~
+
+![](https://github.com/Nexus-LH/PaddleOCR-learning/blob/main/4.png)
